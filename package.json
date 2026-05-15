@@ -1,0 +1,28 @@
+{
+  "name": "jwtmoshiur",
+  "version": "1.0.4",
+  "description": "JWT auto-setup package with token generation and verification",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "jwtmoshiur": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "setup": "node bin/cli.js",
+    "prepublishOnly": "npm run build",
+    "postinstall": "node bin/cli.js"
+  },
+  "keywords": ["jwtmoshiur","jwt", "authentication", "token", "security"],
+  "author": "Moshiur Rahman Deap",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.8.0",
+    "typescript": "^6.0.3"
+  }
+}
