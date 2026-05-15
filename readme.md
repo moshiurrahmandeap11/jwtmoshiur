@@ -9,16 +9,16 @@ A lightweight, zero-configuration npm package that automatically sets up JWT aut
 
 ## ✨ Features
 
-- 🚀 **Zero Configuration** - Automatic setup on installation
-- 📁 **Auto Project Setup** - Generates `.env` and utility files
-- 🔑 **Generate Tokens** - Simple, intuitive token creation
-- ✅ **Verify Tokens** - Built-in token validation
-- 🛡️ **Secure** - Uses industry-standard `jsonwebtoken` library
-- 📦 **Lightweight** - Minimal dependencies
-- 🎯 **TypeScript Ready** - Full TypeScript support
-- ⚡ **Easy Integration** - Works with any Node.js project
+-  **Zero Configuration** - Automatic setup on installation
+-  **Auto Project Setup** - Generates `.env` and utility files
+-  **Generate Tokens** - Simple, intuitive token creation
+-  **Verify Tokens** - Built-in token validation
+-  **Secure** - Uses industry-standard `jsonwebtoken` library
+-  **Lightweight** - Minimal dependencies
+-  **TypeScript Ready** - Full TypeScript support
+-  **Easy Integration** - Works with any Node.js project
 
-## 📦 Installation
+##  Installation
 
 ```bash
 npm install jwtmoshiur
@@ -29,12 +29,12 @@ npx jwtmoshiur
 ```
 
 That's it! The package automatically:
-- ✅ Creates a `.env` file with secure JWT configuration
-- ✅ Generates `utils/generateToken.js` (or `.ts` for TypeScript projects)
-- ✅ Generates `utils/verifyToken.js` (or `.ts`)
-- ✅ Installs all required dependencies
+-  Creates a `.env` file with secure JWT configuration
+-  Generates `utils/generateToken.js` (or `.ts` for TypeScript projects)
+-  Generates `utils/verifyToken.js` (or `.ts`)
+-  Installs all required dependencies
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Generate a Token
 
@@ -65,7 +65,7 @@ try {
 }
 ```
 
-## 📚 Usage Examples
+##  Usage Examples
 
 ### Express.js Authentication Middleware
 
@@ -148,7 +148,7 @@ const shortToken = generateToken(
 // Options: 1h, 7d, 30d, etc.
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 Edit your `.env` file to customize JWT settings:
 
@@ -165,9 +165,9 @@ JWT_EXPIRY=24h
 | `JWT_SECRET` | Generated | Secret key for signing tokens (change this!) |
 | `JWT_EXPIRY` | `24h` | Token expiration time (`1h`, `7d`, `30d`, etc.) |
 
-**⚠️ Important:** Always change `JWT_SECRET` to a strong, unique value in production!
+** Important:** Always change `JWT_SECRET` to a strong, unique value in production!
 
-## 📖 API Reference
+##  API Reference
 
 ### `generateToken(payload: object): string`
 
@@ -208,7 +208,7 @@ try {
 }
 ```
 
-## 🔄 Manual Setup
+##  Manual Setup
 
 If you need to re-run the setup process:
 
@@ -218,7 +218,7 @@ npx jwtmoshiur
 
 This will regenerate the `.env` file and utility files if they don't exist.
 
-## 📁 Project Structure
+##  Project Structure
 
 After installation, your project will have:
 
@@ -233,7 +233,7 @@ your-project/
 └── package.json
 ```
 
-## 🔐 Security Best Practices
+##  Security Best Practices
 
 1. **Never commit `.env` to version control**
    ```bash
@@ -284,29 +284,30 @@ npm install jwtmoshiur@latest
 ### Issue: `.env` not created
 **Solution:** Run `npx jwtmoshiur` to manually trigger setup
 
-## 📋 Requirements
+##  Requirements
 
 - Node.js >= 14.0.0
 - npm >= 6.0.0
 
-## 📦 Dependencies
+##  Dependencies
 
 - `jsonwebtoken` - JWT signing and verification
 - `dotenv` - Environment variable management
 
-## 📄 License
+##  License
 
 MIT License - see LICENSE file for details
 
-## 👨‍💻 Author
+##  Author
 
 Created by **Moshiur Rahman Deap**
+Portfolio - (Moshiur Rahman Deap)[https://moshiurrahman.online]
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Feel free to submit issues and pull requests.
 
-## 📞 Support
+##  Support
 
 If you have any questions or issues, please open an issue on GitHub or contact the maintainer.
 
